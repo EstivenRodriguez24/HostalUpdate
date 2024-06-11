@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de clientes</title>
     <?php
-    // Inclusión de metaetiquetas globales usando __DIR__
-    include __DIR__ . '/metaetiquetas-generales.php';
+    // Inclusión de metaetiquetas globales de forma segura
+    include_once __DIR__ . '/metaetiquetas-generales.php';
     ?>
 
     <!-- Estilos CSS en línea -->
@@ -71,9 +71,9 @@
 </head>
 <body>
     <?php
-    // Inclusión de título y menú principal usando __DIR__
-    include __DIR__ . '/titulo.php';
-    include __DIR__ . '/menu-principal.php';
+    // Inclusión de título y menú principal de forma segura
+    include_once __DIR__ . '/titulo.php';
+    include_once __DIR__ . '/menu-principal.php';
     ?>
 
     <div class="formulario">
