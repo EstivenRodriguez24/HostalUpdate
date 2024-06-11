@@ -1,0 +1,55 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Century Gothic', sans-serif; /* Cambia la fuente a Arial o una fuente sans-serif similar */
+    background-color: #003300; /* Cambia el color de fondo a un verde oscuro */
+    text-align: center; /* Justifica el contenido al centro */
+}
+
+/* Estilos para el menú principal */
+#cajaMenuPrincipal {
+    background-color: #1a7402; /* Fondo del menú */
+    margin: 20;
+    padding: 20px;
+}
+
+#cajaMenuPrincipal ul {
+    list-style-type: none; /* Elimina los estilos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+#cajaMenuPrincipal ul li {
+    display: inline-block; /* Muestra los elementos del menú en línea */
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+#cajaMenuPrincipal ul li a {
+    color: #00ff04; /* Color de texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+#cajaMenuPrincipal ul li a:hover {
+    color: #00b3ff; /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+#cajaMenuPrincipal img {
+    width: 50px; /* Establece el ancho deseado de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto al ajustar el ancho */
+    display: block; /* Hace que la imagen sea un bloque para poder centrarla horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
