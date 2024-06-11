@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<HTML lang="es">
-	<HEAD>
-		<TITLE>Consulta de clientes</TITLE>
-		<?php //Metaetiquetas globales importadas
-			include ('metaetiquetas-generales.php');
-		?>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de clientes</title>
+    <?php
+    // Inclusión de metaetiquetas globales
+    include (__DIR__ . '/metaetiquetas-generales.php');
+    ?>
 
 
 <!DOCTYPE html>
@@ -75,9 +78,11 @@
 </head>
 <body>
     <?php
-        include ('titulo.php');
-        include ('menu-principal.php');
+    // Inclusión de título y menú principal
+    include (__DIR__ . '/titulo.php');
+    include (__DIR__ . '/menu-principal.php');
     ?>
+
     <div class="formulario">
         <form>
             <h2>Buscar cliente</h2>
