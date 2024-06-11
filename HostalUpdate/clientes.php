@@ -6,7 +6,7 @@
     <title>Consulta de clientes</title>
     <?php
     // Inclusión de metaetiquetas globales
-    include (__DIR__ . '/metaetiquetas-generales.php');
+    include __DIR__ . '/metaetiquetas-generales.php';
     ?>
 
 
@@ -79,8 +79,8 @@
 <body>
     <?php
     // Inclusión de título y menú principal
-    include (__DIR__ . '/titulo.php');
-    include (__DIR__ . '/menu-principal.php');
+    include __DIR__ . '/titulo.php';
+    include __DIR__ . '/menu-principal.php';
     ?>
 
     <div class="formulario">
