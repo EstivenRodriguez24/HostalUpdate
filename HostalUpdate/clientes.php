@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de clientes</title>
     <?php
-    // Inclusión de metaetiquetas globales de forma segura
-    include_once __DIR__ . '/metaetiquetas-generales.php';
-    ?>
+    // Función para incluir archivos de manera segura
+    function includeFile($fileName) {
+        $filePath = __DIR__ . '/' . $fileName;
+        if (file_exists($filePath)) {
+            include_once $filePath;
+        } else {
+            error_log("Archivo $fileName no encontrado.");
+        }
+    }
 
+    // Inclusión de metaetiquetas globales de forma segura
+    includeFile('metaetiquetas-generales.php');
+    ?>
+    
     <!-- Estilos CSS en línea -->
     <style>
         body {
@@ -71,9 +81,9 @@
 </head>
 <body>
     <?php
-    // Inclusión de título y menú principal de forma segura
-    include_once __DIR__ . '/titulo.php';
-    include_once __DIR__ . '/menu-principal.php';
+    // Inclusión de título y menú principal de forma segura usando la función
+    includeFile('titulo.php');
+    includeFile('menu-principal.php');
     ?>
 
     <div class="formulario">
@@ -96,3 +106,4 @@
     </div>
 </body>
 </html>
+
