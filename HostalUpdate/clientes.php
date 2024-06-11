@@ -5,18 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de clientes</title>
     <?php
-    // Inclusión de metaetiquetas globales
+    // Inclusión de metaetiquetas globales usando __DIR__
     include __DIR__ . '/metaetiquetas-generales.php';
     ?>
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de clientes</title>
-    <!-- Aquí puedes incluir tus enlaces a CSS, fuentes, etc. -->
+    <!-- Estilos CSS en línea -->
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,15 +19,15 @@
         }
 
         .formulario {
-            margin-top: 50px; /* Ajusta la distancia del formulario desde la parte superior */
-            margin-bottom: 50px; /* Ajusta la distancia del formulario desde la parte inferior */
+            margin-top: 50px;
+            margin-bottom: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #30b5ba;
-            width: 80%; /* Ancho del formulario */
-            max-width: 600px; /* Ancho máximo del formulario */
-            margin: 50px auto; /* Centra el formulario horizontalmente */
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -78,7 +71,7 @@
 </head>
 <body>
     <?php
-    // Inclusión de título y menú principal
+    // Inclusión de título y menú principal usando __DIR__
     include __DIR__ . '/titulo.php';
     include __DIR__ . '/menu-principal.php';
     ?>
@@ -103,5 +96,3 @@
     </div>
 </body>
 </html>
-
-
